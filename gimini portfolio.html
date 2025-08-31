@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabareeshwari S | Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Use Inter font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles */
+        :root {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* Class to handle the active navigation item */
+        .nav-item.active {
+            color: #a855f7; /* purple-400 */
+            background-color: #1f2937; /* gray-800 */
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100">
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-gray-900 bg-opacity-80 backdrop-blur-md p-4 shadow-md">
+        <div class="container mx-auto flex justify-center space-x-6 sm:space-x-12">
+            <!-- Nav Items -->
+            <a href="#home" class="nav-item flex flex-col items-center p-2 rounded-lg transition-colors duration-300 text-gray-400 hover:text-purple-400 hover:bg-gray-800">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-home"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                <span class="text-xs mt-1 hidden sm:block">Home</span>
+            </a>
+            <a href="#skills" class="nav-item flex flex-col items-center p-2 rounded-lg transition-colors duration-300 text-gray-400 hover:text-purple-400 hover:bg-gray-800">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                <span class="text-xs mt-1 hidden sm:block">Skills</span>
+            </a>
+            <a href="#projects" class="nav-item flex flex-col items-center p-2 rounded-lg transition-colors duration-300 text-gray-400 hover:text-purple-400 hover:bg-gray-800">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-briefcase"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                <span class="text-xs mt-1 hidden sm:block">Projects</span>
+            </a>
+            <a href="#education" class="nav-item flex flex-col items-center p-2 rounded-lg transition-colors duration-300 text-gray-400 hover:text-purple-400 hover:bg-gray-800">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
+                <span class="text-xs mt-1 hidden sm:block">Education</span>
+            </a>
+            <a href="#certifications" class="nav-item flex flex-col items-center p-2 rounded-lg transition-colors duration-300 text-gray-400 hover:text-purple-400 hover:bg-gray-800">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-award"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.896a8 8 0 1 1-6.954 0"/></svg>
+                <span class="text-xs mt-1 hidden sm:block">Certifications</span>
+            </a>
+            <a href="#achievements" class="nav-item flex flex-col items-center p-2 rounded-lg transition-colors duration-300 text-gray-400 hover:text-purple-400 hover:bg-gray-800">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-crown"><path d="m2.6 14.5 5.5-5 5.5 5 5.5-5 5.5 5"/><path d="M22 17H2"/><path d="M12 15.5V23"/></svg>
+                <span class="text-xs mt-1 hidden sm:block">Achievements</span>
+            </a>
+            <a href="#contact" class="nav-item flex flex-col items-center p-2 rounded-lg transition-colors duration-300 text-gray-400 hover:text-purple-400 hover:bg-gray-800">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                <span class="text-xs mt-1 hidden sm:block">Contact</span>
+            </a>
+        </div>
+    </nav>
+
+    <main class="container mx-auto p-8 pt-20">
+
+        <!-- Home Section -->
+        <section id="home" class="py-16 min-h-screen flex flex-col justify-center">
+            <h2 class="text-4xl font-bold text-center mb-10 text-gray-200">Sabareeshwari S</h2>
+            <div class="mx-auto w-full max-w-5xl">
+                <div class="flex flex-col sm:flex-row items-center gap-8 md:gap-16">
+                    <!-- Photo Placeholder -->
+                    <div class="w-48 h-48 sm:w-64 sm:h-64 flex-shrink-0 bg-gray-800 rounded-full flex items-center justify-center overflow-hidden border-4 border-purple-500">
+                        <!-- You can add your photo here, e.g., <img src="..." alt="Sabareeshwari S" class="object-cover w-full h-full" /> -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user text-gray-500"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    </div>
+                    <div class="text-center sm:text-left">
+                        <h1 class="text-4xl sm:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 mb-2">Sabareeshwari S</h1>
+                        <h2 class="text-lg sm:text-xl text-gray-300 font-medium mb-4">Cybersecurity Engineering Student</h2>
+                        <p class="text-gray-400 max-w-2xl leading-relaxed">
+                            A cybersecurity engineering student with a passion for ethical hacking, digital forensics, and CTF competitions. Developer of FlagSight – a Python-based CTF GUI tool. Actively learning through TryHackMe and building tools to automate and simplify cybersecurity tasks. Eager to contribute to innovative cybersecurity solutions in a dynamic and challenging environment.
+                        </p>
+                        <div class="mt-6 space-y-2 sm:space-y-0 sm:space-x-6 text-gray-400">
+                            <p class="flex items-center justify-center sm:justify-start gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                                Madurai City
+                            </p>
+                            <p class="flex items-center justify-center sm:justify-start gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                                sabariselvarajan1119@gmail.com
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-16 min-h-screen flex flex-col justify-center">
+            <h2 class="text-4xl font-bold text-center mb-10 text-gray-200">Skills</h2>
+            <div class="mx-auto w-full max-w-5xl">
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Skills Card 1 -->
+                    <div class="bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-700 hover:border-purple-500 transition-colors duration-300">
+                        <div class="flex items-center gap-3 mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield text-purple-400"><path d="M20 13c0 5-4 9-8 9s-8-4-8-9V5l8-3 8 3v8Z"/></svg>
+                            <h3 class="text-xl font-semibold text-gray-100">Cybersecurity & CTF</h3>
+                        </div>
+                        <ul class="space-y-2 text-gray-400">
+                            <li class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle text-green-500"><path d="M22 11.08V12a10 10 0 1 1-5.93-8.66"/><path d="M9 11l3 3L22 4"/></svg>CTF Strategy</li>
+                            <li class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle text-green-500"><path d="M22 11.08V12a10 10 0 1 1-5.93-8.66"/><path d="M9 11l3 3L22 4"/></svg>Team Collaboration</li>
+                            <li class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle text-green-500"><path d="M22 11.08V12a10 10 0 1 1-5.93-8.66"/><path d="M9 11l3 3L22 4"/></svg>Ethical Hacking</li>
+                        </ul>
+                    </div>
+                    <!-- Skills Card 2 -->
+                    <div class="bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-700 hover:border-purple-500 transition-colors duration-300">
+                        <div class="flex items-center gap-3 mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-monitor text-purple-400"><rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/></svg>
+                            <h3 class="text-xl font-semibold text-gray-100">Tools & Platforms</h3>
+                        </div>
+                        <ul class="space-y-2 text-gray-400">
+                            <li class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle text-green-500"><path d="M22 11.08V12a10 10 0 1 1-5.93-8.66"/><path d="M9 11l3 3L22 4"/></svg>Kali Linux</li>
+                            <li class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle text-green-500"><path d="M22 11.08V12a10 10 0 1 1-5.93-8.66"/><path d="M9 11l3 3L22 4"/></svg>Burp Suite</li>
+                            <li class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle text-green-500"><path d="M22 11.08V12a10 10 0 1 1-5.93-8.66"/><path d="M9 11l3 3L22 4"/></svg>Linux Tools</li>
+                            <li class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle text-green-500"><path d="M22 11.08V12a10 10 0 1 1-5.93-8.66"/><path d="M9 11l3 3L22 4"/></svg>Figma (UI/UX Design)</li>
+                            <li class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle text-green-500"><path d="M22 11.08V12a10 10 0 1 1-5.93-8.66"/><path d="M9 11l3 3L22 4"/></svg>Canva</li>
+                        </ul>
+                    </div>
+                    <!-- Skills Card 3 -->
+                    <div class="bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-700 hover:border-purple-500 transition-colors duration-300">
+                        <div class="flex items-center gap-3 mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code text-purple-400"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                            <h3 class="text-xl font-semibold text-gray-100">Programming Languages</h3>
+                        </div>
+                        <ul class="space-y-2 text-gray-400">
+                            <li class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle text-green-500"><path d="M22 11.08V12a10 10 0 1 1-5.93-8.66"/><path d="M9 11l3 3L22 4"/></svg>C</li>
+                            <li class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle text-green-500"><path d="M22 11.08V12a10 10 0 1 1-5.93-8.66"/><path d="M9 11l3 3L22 4"/></svg>C++</li>
+                            <li class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle text-green-500"><path d="M22 11.08V12a10 10 0 1 1-5.93-8.66"/><path d="M9 11l3 3L22 4"/></svg>Python</li>
+                        </ul>
+                    </div>
+                    <!-- Skills Card 4 -->
+                    <div class="bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-700 hover:border-purple-500 transition-colors duration-300">
+                        <div class="flex items-center gap-3 mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-handshake text-purple-400"><path d="m12 10.5-2.5 2.5v1.25L12 16.5m-5.5-5L6.5 12V13.25L5 16.5m14-5-1.5 1.5v1.25L17 16.5m-5.5-5L10.5 12V13.25L9 16.5m14-5-1.5 1.5v1.25L21 16.5"/><path d="M12 2a10 10 0 0 0-9.5 7.5L2 12l.5 2.5A10 10 0 0 0 12 22a10 10 0 0 0 9.5-7.5L22 12l-.5-2.5A10 10 0 0 0 12 2Z"/></svg>
+                            <h3 class="text-xl font-semibold text-gray-100">Soft Skills</h3>
+                        </div>
+                        <ul class="space-y-2 text-gray-400">
+                            <li class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle text-green-500"><path d="M22 11.08V12a10 10 0 1 1-5.93-8.66"/><path d="M9 11l3 3L22 4"/></svg>Problem Solving</li>
+                            <li class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle text-green-500"><path d="M22 11.08V12a10 10 0 1 1-5.93-8.66"/><path d="M9 11l3 3L22 4"/></svg>Teamwork</li>
+                            <li class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-circle text-green-500"><path d="M22 11.08V12a10 10 0 1 1-5.93-8.66"/><path d="M9 11l3 3L22 4"/></svg>Communication</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-16 min-h-screen flex flex-col justify-center">
+            <h2 class="text-4xl font-bold text-center mb-10 text-gray-200">Projects</h2>
+            <div class="mx-auto w-full max-w-5xl">
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Project Card 1 -->
+                    <div class="bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-700 hover:scale-105 transition-transform duration-300">
+                        <div class="flex items-start gap-4 mb-4">
+                            <div class="p-3 rounded-full bg-gray-900 border border-gray-700">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ship text-purple-400"><path d="M17 19.664V21a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2v-1.336a2 2 0 0 1-.892-1.28l-2-6A2 2 0 0 1 5.108 11H19.892a2 2 0 0 1 1.892 1.38l-2 6a2 2 0 0 1-.892 1.28Z"/><path d="M7 19.664 5.108 13M17 19.664 19.892 13"/><path d="M12 11V3"/></svg>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-gray-100">Maritime Border Alert System</h3>
+                                <p class="text-sm text-purple-400 mt-1">National Level Hackathon – Study World College of Engineering</p>
+                                <p class="text-xs text-gray-500 mt-1">Mar 2024 – Present</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-400 leading-relaxed">Developed an alert system to detect unauthorized maritime border intrusions. Participated in a national hackathon organized by IEEE & REDDITO.</p>
+                    </div>
+                    <!-- Project Card 2 -->
+                    <div class="bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-700 hover:scale-105 transition-transform duration-300">
+                        <div class="flex items-start gap-4 mb-4">
+                            <div class="p-3 rounded-full bg-gray-900 border border-gray-700">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-droplets text-purple-400"><path d="M7 16.5c2.2-2.35 4.4-4.7 6.3-6.65a3.86 3.86 0 1 0-5.48-5.48c1.9 1.9 4.25 4.1 6.6 6.3"/><path d="M12.7 17.25c1-1.12 2-2.25 2.9-3.37a3.86 3.86 0 1 0-5.48-5.48c1.12 1 2.25 2 3.37 2.9"/><path d="M16 16c0 1.95-.5 3.5-2 5s-2.9-1.5-3.5-2"/></svg>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-gray-100">Smart Water Meter</h3>
+                                <p class="text-sm text-purple-400 mt-1">INNOFESTA’24 – Velammal College of Engineering and Technology</p>
+                                <p class="text-xs text-gray-500 mt-1">Mar 2024</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-400 leading-relaxed">Built a smart IoT water meter for reducing wastage. The project involved hands-on embedded programming and sensor integration.</p>
+                    </div>
+                    <!-- Project Card 3 (Featured) -->
+                    <div class="bg-gray-800 rounded-xl p-6 shadow-lg border border-purple-500 hover:scale-105 transition-transform duration-300">
+                        <div class="flex items-start gap-4 mb-4">
+                            <div class="p-3 rounded-full bg-gray-900 border border-gray-700">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap text-purple-400"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-bold text-gray-100">FlagSight – CTF & Forensic GUI Tool</h3>
+                                <p class="text-sm text-purple-400 mt-1">GitHub Project</p>
+                                <p class="text-xs text-gray-500 mt-1">Jul 2025</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-400 leading-relaxed">A Python GUI tool for CTF players & forensic learners using PyQt5. It detects encrypted/high-entropy files, analyzes EXIF data, and generates reports. Beginner-friendly with no CLI required.</p>
+                        <div class="mt-4 inline-block bg-purple-500 text-white text-xs font-bold px-3 py-1 rounded-full">
+                            Featured Project
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="py-16 min-h-screen flex flex-col justify-center">
+            <h2 class="text-4xl font-bold text-center mb-10 text-gray-200">Education</h2>
+            <div class="mx-auto w-full max-w-5xl">
+                <div class="bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-700">
+                    <h3 class="text-2xl font-bold text-purple-400">Bachelor of Engineering in Cyber Security</h3>
+                    <p class="text-gray-300 mt-1">PSNA College of Engineering and Technology</p>
+                    <p class="text-sm text-gray-500">Sep 2023 – Oct 2027</p>
+                    <div class="mt-4">
+                        <h4 class="text-lg font-semibold text-gray-200">Relevant Coursework:</h4>
+                        <ul class="list-disc list-inside mt-2 text-gray-400 space-y-1">
+                            <li>Structural Design</li>
+                            <li>Project Management</li>
+                            <li>Information Security</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="py-16 min-h-screen flex flex-col justify-center">
+            <h2 class="text-4xl font-bold text-center mb-10 text-gray-200">Certifications</h2>
+            <div class="mx-auto w-full max-w-5xl">
+                <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    <!-- Cert Card 1 -->
+                    <div class="bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-700 flex flex-col items-center text-center hover:scale-105 transition-transform duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-text text-purple-400 mb-3"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg>
+                        <h4 class="text-lg font-semibold text-gray-100">Certified C & C++</h4>
+                        <p class="text-sm text-gray-400 mt-1">SSI</p>
+                    </div>
+                    <!-- Cert Card 2 -->
+                    <div class="bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-700 flex flex-col items-center text-center hover:scale-105 transition-transform duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-text text-purple-400 mb-3"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg>
+                        <h4 class="text-lg font-semibold text-gray-100">Mastering Advanced Network Concepts</h4>
+                        <p class="text-sm text-gray-400 mt-1">Guvi/HCL</p>
+                    </div>
+                    <!-- Cert Card 3 -->
+                    <div class="bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-700 flex flex-col items-center text-center hover:scale-105 transition-transform duration-300">
+                        <svg xmlns="http://www.w3.org/2d00/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-text text-purple-400 mb-3"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg>
+                        <h4 class="text-lg font-semibold text-gray-100">Introduction to Cybersecurity</h4>
+                        <p class="text-sm text-gray-400 mt-1">Cisco</p>
+                    </div>
+                    <!-- Cert Card 4 -->
+                    <div class="bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-700 flex flex-col items-center text-center hover:scale-105 transition-transform duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-text text-purple-400 mb-3"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg>
+                        <h4 class="text-lg font-semibold text-gray-100">Cybersecurity Essentials</h4>
+                        <p class="text-sm text-gray-400 mt-1">Cisco</p>
+                    </div>
+                    <!-- Cert Card 5 -->
+                    <div class="bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-700 flex flex-col items-center text-center hover:scale-105 transition-transform duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-text text-purple-400 mb-3"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg>
+                        <h4 class="text-lg font-semibold text-gray-100">TryHackMe Bronze</h4>
+                        <p class="text-sm text-gray-400 mt-1">TryHackMe</p>
+                    </div>
+                    <!-- Cert Card 6 -->
+                    <div class="bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-700 flex flex-col items-center text-center hover:scale-105 transition-transform duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-text text-purple-400 mb-3"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg>
+                        <h4 class="text-lg font-semibold text-gray-100">TryHackMe Silver</h4>
+                        <p class="text-sm text-gray-400 mt-1">TryHackMe</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements" class="py-16 min-h-screen flex flex-col justify-center">
+            <h2 class="text-4xl font-bold text-center mb-10 text-gray-200">Achievements</h2>
+            <div class="mx-auto w-full max-w-5xl">
+                <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+                    <!-- Achievement Card 1 -->
+                    <div class="bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-700 flex flex-col items-center text-center hover:scale-105 transition-transform duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trophy text-yellow-400 mb-3"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4.5 9a2.5 2.5 0 0 1 0 5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 1 0 5H18"/><path d="M10.84 10.88c.18-.3.33-.6.5-.88s.44-.45.72-.6c.3-.15.6-.2.9-.2s.58.05.86.17c.28.12.52.33.74.52.22.2.36.4.48.6.12.2.2.4.28.6.08.2.14.4.18.6.04.2.06.4.06.58V21a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1v-9.3c0-.18.02-.38.06-.58.04-.2.1-.4.18-.6.08-.2.2-.4.28-.6.12-.2.26-.4.48-.6.22-.2.46-.38.74-.52.28-.12.56-.17.86-.17.3 0 .6.05.9.2.28.15.53.3.72.6Z"/></svg>
+                        <h4 class="text-lg font-semibold text-gray-100">6th place in CTF</h4>
+                        <p class="text-sm text-gray-400 mt-1">Sri Eshwar College</p>
+                    </div>
+                    <!-- Achievement Card 2 -->
+                    <div class="bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-700 flex flex-col items-center text-center hover:scale-105 transition-transform duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-up text-green-400 mb-3"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+                        <h4 class="text-lg font-semibold text-gray-100">Ranked 29th out of 554 teams</h4>
+                        <p class="text-sm text-gray-400 mt-1">National-level CTF (Jamal Mohamed College)</p>
+                    </div>
+                    <!-- Achievement Card 3 -->
+                    <div class="bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-700 flex flex-col items-center text-center hover:scale-105 transition-transform duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users text-blue-400 mb-3"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        <h4 class="text-lg font-semibold text-gray-100">Conducted a CTF</h4>
+                        <p class="text-sm text-gray-400 mt-1">as part of Team Knull CTF</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Me Section -->
+        <section id="contact" class="py-16 min-h-screen flex flex-col justify-center">
+            <h2 class="text-4xl font-bold text-center mb-10 text-gray-200">Contact Me</h2>
+            <div class="mx-auto w-full max-w-5xl">
+                <div class="flex flex-wrap justify-center gap-6">
+                    <a href="https://www.linkedin.com/in/sabareeshwari-selvarajan-75a985294/" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center p-4 bg-gray-800 rounded-xl shadow-lg border border-gray-700 hover:border-purple-500 transition-colors duration-300 text-gray-400 hover:text-purple-400">
+                        <svg width="32" height="32" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268a1.71 1.71 0 0 1 0-3.42c.949 0 1.71.77 1.71 1.71s-.761 1.71-1.71 1.71zm13.5 12.268h-3v-5.604c0-3.368-4.14-3.134-4.14 0v5.604h-3v-11h3v1.765c1.396-2.586 7.14-2.715 7.14 2.51v6.725z"/></svg>
+                        <span class="mt-2 text-sm">LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/sabsec-h4x" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center p-4 bg-gray-800 rounded-xl shadow-lg border border-gray-700 hover:border-purple-500 transition-colors duration-300 text-gray-400 hover:text-purple-400">
+                        <svg width="32" height="32" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.304.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.465-2.381 1.236-3.221-.124-.303-.535-1.519.117-3.179 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.667.242 2.875.118 3.178.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.614.8.575 4.765-1.589 8.2-6.091 8.2-11.387 0-6.627-5.373-12-12-12z"/></svg>
+                        <span class="mt-2 text-sm">GitHub</span>
+                    </a>
+                    <a href="https://tryhackme.com/p/sabarih4x" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center p-4 bg-gray-800 rounded-xl shadow-lg border border-gray-700 hover:border-purple-500 transition-colors duration-300 text-gray-400 hover:text-purple-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-terminal"><polyline points="4 17 10 11 4 5"/><line x1="12" x2="20" y1="19" y2="19"/></svg>
+                        <span class="mt-2 text-sm">TryHackMe</span>
+                    </a>
+                    <a href="mailto:sabariselvarajan1119@gmail.com" class="flex flex-col items-center p-4 bg-gray-800 rounded-xl shadow-lg border border-gray-700 hover:border-purple-500 transition-colors duration-300 text-gray-400 hover:text-purple-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                        <span class="mt-2 text-sm">Email</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="p-4 text-center text-gray-500 text-sm">
+        <p>&copy; 2024 Sabareeshwari S. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for nav highlight and smooth scroll -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-item');
+
+            // Function to update the active nav link based on scroll position
+            const updateActiveLink = () => {
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    // Check if the middle of the viewport is within the section
+                    if (window.scrollY + window.innerHeight / 2 >= sectionTop) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.href.includes(current)) {
+                        link.classList.add('active');
+                    }
+                });
+            };
+
+            // Set initial active link
+            updateActiveLink();
+
+            // Add scroll event listener to update active link
+            window.addEventListener('scroll', updateActiveLink);
+            
+            // Add click event listeners to nav links for smooth scrolling
+            navLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const targetId = link.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        // Smooth scroll to the target section
+                        window.scrollTo({
+                            top: targetElement.offsetTop,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
